@@ -13,6 +13,8 @@ Este guia reproduz a compilação e os testes do protótipo no VS Code com Platf
 
 O primeiro build precisa de acesso à Internet para baixar a plataforma e as bibliotecas indicadas em `platformio.ini`.
 
+O arquivo `requirements.txt` fixa as dependências Python usadas pelos scripts. As dependências do firmware são gerenciadas separadamente pelo PlatformIO, conforme `platformio.ini`.
+
 ## 2. Preparação local das credenciais e do certificado
 
 Abra um terminal PowerShell na pasta do projeto:
@@ -23,7 +25,7 @@ if (-not (Test-Path src\secrets.h)) {
 } else {
     Write-Output "src\secrets.h ja existe; arquivo local preservado."
 }
-python -m pip install cryptography
+python -m pip install -r requirements.txt
 ```
 
 Edite `src\secrets.h` e substitua o texto de exemplo por uma chave aleatória exclusiva para este laboratório. Se quiser gerar uma no terminal:
