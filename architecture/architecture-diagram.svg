@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="510" viewBox="0 0 1000 510" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitetura de laboratório do protótipo NexaSense</title>
+  <desc id="desc">DHT22 conecta-se ao ESP32, que contém firmware e memória Flash. UART liga-se ao monitor serial. O Wi-Fi conecta o protótipo à rede de laboratório e ao gateway Wokwi; um encaminhamento local alcança um cliente HTTPS. MQTT não é usado.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#355070"/>
+    </marker>
+    <style>
+      .box { fill: #f3f7fa; stroke: #355070; stroke-width: 2; rx: 12; }
+      .label { font: 600 18px Arial, sans-serif; fill: #18324b; text-anchor: middle; }
+      .detail { font: 14px Arial, sans-serif; fill: #354b5e; text-anchor: middle; }
+      .edge { stroke: #355070; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .note { font: 13px Arial, sans-serif; fill: #5b6670; }
+    </style>
+  </defs>
+  <rect x="20" y="185" width="165" height="100" class="box"/>
+  <text x="102" y="220" class="label">Sensor DHT22</text>
+  <text x="102" y="248" class="detail">GPIO 15 · ambiente</text>
+
+  <rect x="225" y="140" width="220" height="190" class="box"/>
+  <text x="335" y="177" class="label">ESP32-DevKitC V4</text>
+  <text x="335" y="208" class="detail">Firmware Arduino C++</text>
+  <text x="335" y="236" class="detail">Memória Flash</text>
+  <text x="335" y="264" class="detail">HTTPS :443 · X-API-Key</text>
+  <text x="335" y="292" class="detail">UART0 · GPIO 1/3</text>
+
+  <rect x="520" y="100" width="205" height="125" class="box"/>
+  <text x="622" y="135" class="label">Rede de laboratório</text>
+  <text x="622" y="163" class="detail">Wi-Fi Wokwi-GUEST</text>
+  <text x="622" y="190" class="detail">Gateway / encaminhamento</text>
+
+  <rect x="785" y="100" width="195" height="125" class="box"/>
+  <text x="882" y="137" class="label">Cliente local</text>
+  <text x="882" y="165" class="detail">localhost:8443</text>
+  <text x="882" y="192" class="detail">HTTPS → target:443</text>
+
+  <rect x="520" y="280" width="205" height="75" class="box"/>
+  <text x="622" y="313" class="label">Monitor serial</text>
+  <text x="622" y="339" class="detail">USB / UART · 115200 baud</text>
+
+  <path d="M185 235 L220 235" class="edge"/>
+  <text x="202" y="219" class="detail">dados</text>
+  <path d="M445 205 C475 185 488 165 515 165" class="edge"/>
+  <text x="480" y="176" class="detail">Wi-Fi</text>
+  <path d="M725 162 L780 162" class="edge"/>
+  <text x="752" y="146" class="detail">TLS</text>
+  <path d="M445 290 C475 305 490 317 515 317" class="edge"/>
+  <text x="480" y="306" class="detail">UART</text>
+
+  <text x="20" y="415" class="note">Fluxo real do protótipo: DHT22 → ESP32 (firmware/Flash) → Wi-Fi → rede de laboratório → cliente HTTPS local.</text>
+  <text x="20" y="440" class="note">MQTT não está implementado. A demonstração HTTP em 127.0.0.1:8000 é independente e não pertence ao fluxo do ESP32.</text>
+  <text x="20" y="465" class="note">Ambiente Wokwi simulado; sem medições físicas ou captura de pacotes. A porta 8443 é encaminhada localmente à 443.</text>
+</svg>

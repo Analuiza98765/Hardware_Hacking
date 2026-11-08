@@ -1,0 +1,7 @@
+Sem chave: HTTP 401 (esperado 401) - PASSOU
+Chave incorreta: HTTP 401 (esperado 401) - PASSOU
+Chave correta / sensor desconectado: HTTP 500 (esperado 500) - PASSOU
+  JSON de erro validado: Falha na leitura do sensor
+Rota raiz: HTTP 200 (esperado 200) - PASSOU
+Rota inexistente: HTTP 404 (esperado 404) - PASSOU
+TLS TLSv1.2; certificado de laboratório comparado com a copia local esperada; pinning exato usado somente neste teste local.

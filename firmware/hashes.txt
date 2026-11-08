@@ -1,0 +1,58 @@
+# Manifesto SHA-256 — NexaSense
+# Data de cálculo: 2026-11-02 (revalidado após ensaios Wokwi no VS Code)
+# Hashes identificam os bytes listados; não atestam autenticidade de hardware.
+
+## Fonte original preservado
+# Arquivo: firmware/original/nexasense-original.ino
+# Tipo: código-fonte educacional original; não foi recebido dump binário de flash.
+# Tamanho: 1884 bytes
+# SHA-256: 1ce627e770562cb062ef83a49d0ca5f90c1e2997cf9a6e38bb7058f828ddcc5f
+
+## Cópia de trabalho
+# Arquivo: src/main.cpp
+# Tamanho: 4317 bytes
+# SHA-256: 0f158aa73fa43a7a500993feda936ea60c8a37aa4b016bd7ce305d722dd58975
+
+## Build local — não distribuir
+# Arquivo: .pio/build/esp32dev/firmware.bin
+# Tamanho: 1343120 bytes
+# SHA-256: 448face8f8f9c3bdd7384846389c66fd560e2542e726507ac6ebff41fa5a92e5
+# O binário contém material criptográfico de laboratório necessário ao firmware.
+
+# Arquivo: .pio/build/esp32dev/firmware.elf
+# Tamanho: 18275256 bytes
+# SHA-256: 2926bd900ddbac7cf19825d105e10e499d3d08deaea417432bc8e582b702d460
+
+## Evidências Wokwi sanitizadas
+# Arquivo: network/test_api_https.py
+# Tamanho: 4820 bytes
+# SHA-256: c2894b26c07aaf1f0f30885a20a3659689dba7d42f71b509936c0f2439fdcd67
+
+# Arquivo: network/evidence/F-01-wokwi-https-test.txt
+# Tamanho: 426 bytes
+# SHA-256: 47302f9983dfb79a7d8dafa94d564d87c2a7e6173f5e74f0d951542e120d91c9
+
+# Arquivo: network/evidence/F-01-wokwi-https.png
+# Tamanho: 27795 bytes
+# SHA-256: 6f5a59cf96de2411374ff983031c976b17b263c1a8397ac036653ed251d3ac22
+
+# Arquivo: network/evidence/F-04-wifi-timeout-vscode.png
+# Tamanho: 21458 bytes
+# SHA-256: 1d92a9d3d0553ffe5d882de6040f085026aff3a252c27ea5e1b2f01e5eb96985
+
+# Arquivo: network/evidence/F-01-autenticacao.png
+# Tamanho: 20420 bytes
+# SHA-256: b4c7727f54a0a73c63e1dae450b20e9a931b7f377eedd9ecd165b22425dae095
+
+# Arquivo: network/evidence/F-06-dht-desconectado-test.txt
+# Tamanho: 451 bytes
+# SHA-256: ea79405c38adbeee3e8c49805df7e49ebd8817c4cc889b9cf76b3b1aa2e0ed09
+
+# Arquivo: network/evidence/F-06-dht-desconectado-vscode.png
+# Tamanho: 26379 bytes
+# SHA-256: 745128bfceeb334b125dfbf1b18d8e880df23f275e5d4e6fe27de122b72e11b5
+
+## Relatório PDF
+# Arquivo: report/relatorio-tecnico.pdf
+# Tamanho: 13278 bytes
+# SHA-256: 50681f69efd9ab1858718c69428111305706c033674ad10bf73252f4a986002c

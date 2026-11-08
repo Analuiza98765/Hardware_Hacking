@@ -1,0 +1,7 @@
+Sem chave: HTTP 401 (esperado 401) - PASSOU
+Chave incorreta: HTTP 401 (esperado 401) - PASSOU
+Chave correta: HTTP 200 (esperado 200) - PASSOU
+  JSON valido: dispositivo, temperatura, umidade
+Rota raiz: HTTP 200 (esperado 200) - PASSOU
+Rota inexistente: HTTP 404 (esperado 404) - PASSOU
+TLS TLSv1.2; certificado de laboratório comparado com a copia local esperada; pinning exato usado somente neste teste local.
